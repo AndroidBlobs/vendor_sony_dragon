@@ -1,0 +1,5 @@
+service softcharged /vendor/bin/charge_service
+    class core
+    user system
+    group wakelock system
+    seclabel u:r:charge_service:s0

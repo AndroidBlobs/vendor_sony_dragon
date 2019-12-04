@@ -1,0 +1,14 @@
+#
+# Copyright (C) 2018 Sony Mobile Communications Inc.
+# All rights, including trade secret rights, reserved.
+#
+
+#
+# init.customization.rc
+#
+
+on post-fs-data
+    # Create directories for preloads
+    mkdir /data/preloads 0775 system system
+    mkdir /data/preloads/file_cache 0775 system system
+    mkdir /data/preloads/file_cache/deletable-app 0775 system system

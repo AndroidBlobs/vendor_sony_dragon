@@ -1,0 +1,9 @@
+on init
+    class_start trimarea
+
+service tad /vendor/bin/tad /dev/block/mmcblk0p1 0,16
+    user root
+    group root
+    socket tad stream 0660 system system
+    class trimarea
+    seclabel u:r:tad:s0

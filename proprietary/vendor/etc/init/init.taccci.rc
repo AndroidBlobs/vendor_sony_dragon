@@ -1,0 +1,7 @@
+# Trim Area CCCI service
+service ta_ccci_service /system/vendor/bin/ta_ccci_service
+    user radio
+    group radio system
+    class core
+    oneshot
+    seclabel u:r:ta_ccci_service:s0
